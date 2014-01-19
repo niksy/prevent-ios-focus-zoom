@@ -1,0 +1,29 @@
+{
+  "name": "prevent-ios-focus-zoom",
+  "version": "0.0.0",
+  "homepage": "https://github.com/niksy/prevent-ios-focus-zoom",
+  "description": "Prevent form elements from zooming when focused on iOS",
+  "main": "dist/prevent-ios-focus-zoom.min.js",
+  "keywords": [
+    "ios",
+    "focus",
+    "zoom"
+  ],
+  "authors": [
+    "Zach Leatherman"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": ">=1.6.0"
+  },
+  "dependencies": {
+    "jquery": ">=1.6.0"
+  }
+}

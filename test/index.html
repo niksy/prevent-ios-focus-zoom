@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>prevent-ios-focus-zoom test</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<style>
+		input {
+			font-size:0.5em;
+		}
+	</style>
+</head>
+<body>
+	<form action="/">
+		<fieldset>
+			<input type="text" />
+		</fieldset>
+	</form>
+	<script src="../bower_components/jquery/jquery.min.js"></script>
+	<script src="../dist/prevent-ios-focus-zoom.min.js"></script>
+	<script>
+		$(document).on('ready', function () {
+			$('input').preventFocusZoom();
+		});
+	</script>
+</body>
+</html>

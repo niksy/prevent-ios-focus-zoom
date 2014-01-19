@@ -1,0 +1,32 @@
+{
+  "name": "prevent-ios-focus-zoom",
+  "version": "0.0.0",
+  "description": "Prevent form elements from zooming when focused on iOS",
+  "main": "src/prevent-ios-focus-zoom.js",
+  "keywords": [
+    "ios",
+    "focus",
+    "zoom"
+  ],
+  "author": "Zach Leatherman",
+  "contributors": [
+    "Ivan Nikolić"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/niksy/prevent-ios-focus-zoom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niksy/prevent-ios-focus-zoom/issues"
+  },
+  "homepage": "https://github.com/niksy/prevent-ios-focus-zoom",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-bump": "0.0.13",
+    "grunt-jscs-checker": "~0.3.2",
+    "grunt-contrib-jshint": "~0.8.0"
+  }
+}
