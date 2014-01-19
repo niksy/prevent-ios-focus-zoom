@@ -1,4 +1,4 @@
-/* prevent-ios-focus-zoom 0.0.0 - Prevent form elements from zooming when focused on iOS | Author: Zach Leatherman, 2014 | Contributors: Ivan Nikolić | License: MIT */
+/* prevent-ios-focus-zoom 0.1.0 - Prevent form elements from zooming when focused on iOS | Author: Zach Leatherman, 2014 | Contributors: Ivan Nikolić | License: MIT */
 function preventFocusZoom () {
 	// We’re dealing with iOS only so exit early if we are on
 	// some different platform
