@@ -103,11 +103,12 @@
 			});
 		}
 
-		this
-			.filter(function ( index, element ) {
-				return !$.data(element, plugin.name) && $(element).is('input,select,textarea');
-			})
-			.data(plugin.name, new PreventFocusZoom(this));
+		var collection = this.filter(function () {
+			return !$.data(this, plugin.name) && $(this).is('input,select,textarea');
+		});
+		if ( collection.length ) {
+			collection.data(plugin.name, new PreventFocusZoom(collection));
+		}
 
 		return this;
 
