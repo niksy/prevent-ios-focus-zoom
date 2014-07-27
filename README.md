@@ -10,12 +10,28 @@ Original script by [@zachleat](https://github.com/zachleat) ([Gistfile](https://
 bower install niksy/prevent-ios-focus-zoom
 ```
 
+## API
+
+### `Element.preventFocusZoom([destroy])`
+
+Returns: `jQuery`
+
+#### destroy
+
+Destroy plugin instance.
+
 ## Examples
 
 Run on default form elements.
 
 ```javascript
 $('input:text, select, textarea').preventFocusZoom();
+```
+
+Destroy plugin instance.
+
+```javascript
+$('input:text, select, textarea').preventFocusZoom('destroy');
 ```
 
 ## Browsers

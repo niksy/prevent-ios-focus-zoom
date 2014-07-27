@@ -11,17 +11,28 @@
 	</style>
 </head>
 <body>
+
 	<form action="/">
 		<fieldset>
 			<input type="text" />
 		</fieldset>
 	</form>
+
+	<div class="controls">
+		<button type="button" class="destroy">Destroy</button>
+	</div>
+
+
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="../src/prevent-ios-focus-zoom.js"></script>
 	<script>
-		$(document).on('ready', function () {
-			$('input').preventFocusZoom();
+
+		$('input').preventFocusZoom();
+
+		$('.destroy').on('click', function () {
+			$('input').preventFocusZoom('destroy');
 		});
+
 	</script>
 </body>
 </html>
