@@ -18,12 +18,15 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src",
+    "Gruntfile.js",
+    "package.json"
   ],
-  "devDependencies": {
-    "jquery": ">=1.6.0"
-  },
   "dependencies": {
-    "jquery": ">=1.6.0"
+    "jquery": ">=1"
+  },
+  "devDependencies": {
+    "jquery": "1"
   }
 }

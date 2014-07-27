@@ -1,29 +1,29 @@
-# Prevent iOS focus zoom
+# prevent-ios-focus-zoom
 
 iOS zooms on form element focus. This script prevents that behavior.
 
 Original script by [@zachleat](https://github.com/zachleat) ([Gistfile](https://gist.github.com/zachleat/2008932)).
 
-## Usage
+## Installation
 
-### jQuery
+```sh
+bower install niksy/prevent-ios-focus-zoom
+```
+
+## Examples
+
+Run on default form elements.
 
 ```javascript
 $('input:text, select, textarea').preventFocusZoom();
 ```
 
-### Vanilla JS
+## Browsers
 
-```javascript
-preventFocusZoom.call(document.getElementsByTagName('input')[0]);
-```
+Tested in IE8+ and all modern browsers.
 
-## Installation
+## License
 
-Distribution files are in `dist` folder.
+[Zach Leatherman](http://www.zachleat.com/web/)
 
-### Using [Bower](http://bower.io)?
-
-```bash
-bower install niksy/prevent-ios-focus-zoom
-```
+Transfered to proper repo by [Ivan Nikolić](http://ivannikolic.com).
