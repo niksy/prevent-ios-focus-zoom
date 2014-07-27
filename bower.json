@@ -1,6 +1,6 @@
 {
   "name": "prevent-ios-focus-zoom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/niksy/prevent-ios-focus-zoom",
   "description": "Prevent form elements from zooming when focused on iOS",
   "main": "dist/prevent-ios-focus-zoom.min.js",
