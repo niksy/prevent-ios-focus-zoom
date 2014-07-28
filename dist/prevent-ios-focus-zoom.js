@@ -1,4 +1,4 @@
-/*! prevent-ios-focus-zoom 0.1.3 - Prevent form elements from zooming when focused on iOS | Author: Zach Leatherman, 2014 | License: MIT */
+/*! prevent-ios-focus-zoom 0.1.4 - Prevent form elements from zooming when focused on iOS | Author: Zach Leatherman, 2014 | Contributors: Ivan Nikolić | License: MIT */
 ;(function ( $, window, document, undefined ) {
 
 	var plugin = {
@@ -27,7 +27,7 @@
 
 		},
 		destroy: function () {
-			this.dom.el.off(this.instance.ens);
+			delete $.data(this.element)[plugin.name];
 		}
 	};
 
@@ -104,14 +104,11 @@
 			});
 		}
 
-		var collection = this.filter(function () {
-			return !$.data(this, plugin.name) && $(this).is('input,select,textarea');
+		return this.each(function () {
+			if (!$.data(this, plugin.name) && $(this).is('input,select,textarea')) {
+				$.data(this, plugin.name, new PreventFocusZoom(this));
+			}
 		});
-		if ( collection.length ) {
-			collection.data(plugin.name, new PreventFocusZoom(collection));
-		}
-
-		return this;
 
 	};
 
