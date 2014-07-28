@@ -5,7 +5,7 @@ module.exports = function ( grunt ) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		meta: {
-			banner: '/*! <%= pkg.name %> <%= pkg.version %> - <%= pkg.description %> | Author: <%= pkg.author %>, <%= grunt.template.today("yyyy") %> | License: <%= pkg.license %> */\n'
+			banner: '/*! <%= pkg.name %> <%= pkg.version %> - <%= pkg.description %> | Author: <%= pkg.author %>, <%= grunt.template.today("yyyy") %> | Contributors: <%= pkg.contributors[0] %> | License: <%= pkg.license %> */\n'
 		},
 
 		concat: {
